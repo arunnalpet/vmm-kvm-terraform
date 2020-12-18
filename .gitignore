@@ -1,2 +1,4 @@
 /samples/centos/terraform.tfstate
 /samples/centos/terraform.tfstate.backup
+/samples/ubuntu/terraform.tfstate
+/samples/ubuntu/terraform.tfstate.backup
