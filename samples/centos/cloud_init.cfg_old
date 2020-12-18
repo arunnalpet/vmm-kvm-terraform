@@ -1,0 +1,7 @@
+#cloud-config
+hostname: testterrahost
+ssh_pwauth: True
+chpasswd:
+  list: |
+     centos:nrarun
+  expire: False
