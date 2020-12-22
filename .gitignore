@@ -3,3 +3,5 @@
 /samples/ubuntu/terraform.tfstate
 /samples/ubuntu/terraform.tfstate.backup
 /images
+/modules/singlevm/.terraform.lock.hcl
+/modules/singlevm/.terraform/
