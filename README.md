@@ -26,4 +26,5 @@ Terraform v0.14.2
 
 ### Cockpit
 [Cockpit UI for managing VMs on KVMs (on multiple hosts as well)](https://www.tecmint.com/manage-kvm-virtual-machines-using-cockpit-web-console/amp/#csi=0&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s)
+
 [Cockpit Configuration](https://cockpit-project.org/guide/133/listen.html)
