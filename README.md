@@ -19,6 +19,11 @@ Terraform v0.14.2
 /root/.local/share/terraform/plugins/registry.terraform.io/dmacvicar/libvirt/0.6.2/linux_amd64/terraform-provider-libvirt
 ```
 
+#### Troubleshoot plugin discovery or terraform issues
+```shell
+export TF_LOG=debug
+```
+
 #### Steps:
 - Create ```images``` directory, and download cloud images.
 - Make sure the path is properly set in ```/modules/singlevm/main.tf```, for cloud-image and cloud-config directories.
