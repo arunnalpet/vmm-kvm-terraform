@@ -16,7 +16,7 @@
 # base OS volume from image
 resource "libvirt_volume" "base-os-qcow2" {
   name   = "${var.vmname}-os-img.qcow2"
-  pool   = "images"
+  pool   = "default"
   source = "/root/vmm-kvm-terraform/images/${var.osimage}"
   format = "qcow2"
 }
@@ -24,7 +24,7 @@ resource "libvirt_volume" "base-os-qcow2" {
 # OS volume
 resource "libvirt_volume" "os-vol" {
   name           = "${var.vmname}-os-vol.qcow2"
-  pool           = "images"
+  pool           = "default"
   format         = "qcow2"
   size           = var.disksize * 1024 * 1024 * 1024
   base_volume_id = libvirt_volume.base-os-qcow2.id
@@ -41,7 +41,7 @@ data "template_file" "user_data" {
 resource "libvirt_cloudinit_disk" "commoninit" {
   name      = "${var.vmname}-commoninit.iso"
   user_data = data.template_file.user_data.rendered
-  pool      = "images"
+  pool      = "default"
 }
 
 # Create Domain

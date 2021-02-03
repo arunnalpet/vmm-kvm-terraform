@@ -5,6 +5,7 @@ Tool | Link
 --- | ---
 Terraform | [v0.14.2](https://releases.hashicorp.com/terraform/0.14.2/terraform_0.14.2_linux_amd64.zip)
 libvirt | [v0.6.2 on Ubuntu 18.04](https://github.com/dmacvicar/terraform-provider-libvirt/releases/download/v0.6.2/terraform-provider-libvirt-0.6.2+git.1585292411.8cbe9ad0.Ubuntu_18.04.amd64.tar.gz)
+libvirt | [v0.6.2 on Centos 7.6.1810](https://github.com/dmacvicar/terraform-provider-libvirt/releases/download/v0.6.2/terraform-provider-libvirt-0.6.2+git.1585292411.8cbe9ad0.Fedora_28.x86_64.tar.gz)
 
 #### Tested on versions:
 ```shell
