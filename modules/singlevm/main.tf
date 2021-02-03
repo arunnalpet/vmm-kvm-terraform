@@ -17,7 +17,7 @@
 resource "libvirt_volume" "base-os-qcow2" {
   name   = "${var.vmname}-os-img.qcow2"
   pool   = "images"
-  source = "/root/terraform_proj/images/${var.osimage}"
+  source = "/root/vmm-kvm-terraform/images/${var.osimage}"
   format = "qcow2"
 }
 
@@ -32,7 +32,7 @@ resource "libvirt_volume" "os-vol" {
 
 # Configure cloud-init
 data "template_file" "user_data" {
-  template = file("/root/terraform_proj/conf/cloud_init.cfg")
+  template = file("/root/vmm-kvm-terraform/conf/cloud_init.cfg")
   vars = {
     hname = var.vmname
   }

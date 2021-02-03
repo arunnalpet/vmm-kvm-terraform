@@ -25,8 +25,7 @@ export TF_LOG=debug
 ```
 
 #### Steps:
-- Create ```images``` directory, and download cloud images.
-- Make sure the path is properly set in ```/modules/singlevm/main.tf```, for cloud-image and cloud-config directories.
+- Make sure the path is properly set in  ```/modules/singlevm/main.tf```, for cloud-image and cloud-config directories.
 - Make sure to use proper image names (Just as the downloaded one) in ```terraform.tfvars```.
 
 ### Cockpit
