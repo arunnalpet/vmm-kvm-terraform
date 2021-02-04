@@ -68,7 +68,7 @@ resource "libvirt_domain" "myvm" {
   vcpu   = var.vcpu 
 
   network_interface {
-    network_name = "default"
+    bridge = "databr"
   }
 
  cloudinit = libvirt_cloudinit_disk.commoninit.id

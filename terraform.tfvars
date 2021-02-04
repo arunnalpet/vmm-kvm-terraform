@@ -26,7 +26,7 @@ myvms = {
     Image     = "CentOS-7-x86_64-GenericCloud.qcow2"
   }
   vm2 = {
-    hostname  = "ubuntu01"
+    hostname  = "gateway"
     osdisk_gb = 500
     ephdisk_gb = 1
     persdisk_gb = 1

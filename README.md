@@ -28,6 +28,7 @@ export TF_LOG=debug
 #### Steps:
 - Make sure the path is properly set in  ```/modules/singlevm/main.tf```, for cloud-image and cloud-config directories.
 - Make sure to use proper image names (Just as the downloaded one) in ```terraform.tfvars```.
+- Make sure you have provided proper bridge interface in ```/modules/singlevm/main.tf```
 
 ### Cockpit
 [Cockpit UI for managing VMs on KVMs (on multiple hosts as well)](https://www.tecmint.com/manage-kvm-virtual-machines-using-cockpit-web-console/amp/#csi=0&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s)

@@ -5,6 +5,14 @@ variable "disksize" {
   type = number
 }
 
+variable "ephdisksize" {
+  type = number
+}
+
+variable "persdisksize" {
+  type = number
+}
+
 variable "vmname" {
   type = string
 }
