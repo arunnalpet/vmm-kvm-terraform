@@ -55,6 +55,17 @@ data "template_file" "user_data" {
   }
 }
 
+data "template_file" "network_data" {
+  template = file("/root/vmm-kvm-terraform/conf/network.cfg")
+  vars = {
+    vmnw = var.vmnw
+    vmgw = var.vmgw
+    vmdns1 = var.vmdns1
+    vmdns2 = var.vmdns2
+    vmdnsdom = var.vmdnsdom
+  }
+}
+
 resource "libvirt_cloudinit_disk" "commoninit" {
   name      = "${var.vmname}-commoninit.iso"
   user_data = data.template_file.user_data.rendered

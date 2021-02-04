@@ -28,3 +28,23 @@ variable "memory" {
 variable "vcpu" {
   type = number
 }
+
+variable "vmnw" {
+  type = string
+}
+
+variable "vmgw" {
+  type = string
+}
+
+variable "vmdns1" {
+  type = string
+}
+
+variable "vmdns2" {
+  type = string
+}
+
+variable "vmdnsdom" {
+  type = string
+}

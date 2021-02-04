@@ -13,6 +13,23 @@ variable "myvms" {
     CPU_Count = number
     RAM       = number
     Image     = string
+    nwip      = string
   }))
   description = ""
+}
+
+variable "nwgw" {
+  type = string
+}
+
+variable "nwdns1" {
+  type = string
+}
+
+variable "nwdns2" {
+  type = string
+}
+
+variable "nwdnsdom" {
+  type = string
 }
