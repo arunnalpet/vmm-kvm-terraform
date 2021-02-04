@@ -30,6 +30,23 @@ resource "libvirt_volume" "os-vol" {
   base_volume_id = libvirt_volume.base-os-qcow2.id
 }
 
+
+# Ephemeral Disk
+resource "libvirt_volume" "eph-vol" {
+  name           = "${var.vmname}-eph-vol.qcow2"
+  pool           = "default"
+  format         = "qcow2"
+  size           = var.ephdisksize * 1024 * 1024 * 1024
+}
+
+# Persistent Disk
+resource "libvirt_volume" "pers-vol" {
+  name           = "${var.vmname}-pers-vol.qcow2"
+  pool           = "default"
+  format         = "qcow2"
+  size           = var.persdisksize * 1024 * 1024 * 1024
+}
+
 # Configure cloud-init
 data "template_file" "user_data" {
   template = file("/root/vmm-kvm-terraform/conf/cloud_init.cfg")
@@ -58,6 +75,14 @@ resource "libvirt_domain" "myvm" {
 
   disk {
     volume_id = "${libvirt_volume.os-vol.id}"
+  }
+
+  disk {
+    volume_id = "${libvirt_volume.eph-vol.id}"
+  }
+
+  disk {
+    volume_id = "${libvirt_volume.pers-vol.id}"
   }
 
   console {

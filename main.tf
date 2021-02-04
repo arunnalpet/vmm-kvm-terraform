@@ -11,6 +11,8 @@ module "kvm_instances" {
 
   vmname   = each.value.hostname
   disksize = each.value.osdisk_gb
+  ephdisksize = each.value.ephdisk_gb
+  persdisksize = each.value.persdisk_gb
   osimage  = each.value.Image
   memory   = each.value.RAM
   vcpu     = each.value.CPU_Count
