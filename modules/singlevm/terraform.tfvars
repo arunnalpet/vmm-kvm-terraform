@@ -7,9 +7,9 @@ vcpu     = 4
 
 # TODO
 # copy SSH Key
-	# https://grantorchard.com/dynamic-cloudinit-content-with-terraform-file-templates/
+# https://grantorchard.com/dynamic-cloudinit-content-with-terraform-file-templates/
 # set base directory, which will apply for
-	# cloud-init config files
-        # os-images
+# cloud-init config files
+# os-images
 # OS Images Path
 # Network

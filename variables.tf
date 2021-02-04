@@ -6,14 +6,14 @@
 
 variable "myvms" {
   type = map(object({
-    hostname  = string
-    osdisk_gb = number
-    ephdisk_gb = number
+    hostname    = string
+    osdisk_gb   = number
+    ephdisk_gb  = number
     persdisk_gb = number
-    CPU_Count = number
-    RAM       = number
-    Image     = string
-    nwip      = string
+    CPU_Count   = number
+    RAM         = number
+    Image       = string
+    nwip        = string
   }))
   description = ""
 }
