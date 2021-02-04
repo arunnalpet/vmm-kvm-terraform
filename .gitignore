@@ -5,3 +5,8 @@
 /images
 /modules/singlevm/.terraform.lock.hcl
 /modules/singlevm/.terraform/
+.terraform.lock.hcl
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
