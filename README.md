@@ -37,7 +37,9 @@ export TF_LOG=debug
 [Cockpit Configuration](https://cockpit-project.org/guide/133/listen.html)
 
 [Mist](https://mist.io/)
+
 [Foreman](https://theforeman.org/)
+
 [Kimchi](https://github.com/kimchi-project/kimchi)
 
 [List of KVM Managers](https://www.linux-kvm.org/page/Management_Tools)
