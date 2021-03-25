@@ -30,7 +30,13 @@ export TF_LOG=debug
 - Make sure to use proper image names (Just as the downloaded one) in ```terraform.tfvars```.
 - Make sure you have provided proper bridge interface in ```/modules/singlevm/main.tf```
 
+## VMM Managers
 ### Cockpit
 [Cockpit UI for managing VMs on KVMs (on multiple hosts as well)](https://www.tecmint.com/manage-kvm-virtual-machines-using-cockpit-web-console/amp/#csi=0&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s)
-
 [Cockpit Configuration](https://cockpit-project.org/guide/133/listen.html)
+
+[Mist](https://mist.io/)
+[Foreman](https://theforeman.org/)
+[Kimchi](https://github.com/kimchi-project/kimchi)
+
+[List of KVM Managers](https://www.linux-kvm.org/page/Management_Tools)
