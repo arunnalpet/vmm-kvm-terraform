@@ -42,4 +42,6 @@ export TF_LOG=debug
 
 [Kimchi](https://github.com/kimchi-project/kimchi)
 
+[oVirt by RedHat](https://www.ovirt.org/)
+
 [List of KVM Managers](https://www.linux-kvm.org/page/Management_Tools)
